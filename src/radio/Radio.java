@@ -52,7 +52,7 @@ public class Radio {
         
         favoritasFM.add(new Emisora(94.3f, "Radio Reloj"));
         favoritasFM.add(new Emisora(94.7f, "Radio 94.7"));
-        favoritasFM.add(new Emisora(101f, "Radio Disney"));
+        favoritasFM.add(new Emisora(101.1f, "Radio Disney"));
         
         this.setMemoriaAM(favoritasAM);
         this.setMemoriaFM(favoritasFM);
