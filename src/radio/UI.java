@@ -25,6 +25,8 @@ public class UI extends javax.swing.JFrame {
     public UI() {
         initComponents();
         
+        System.out.println("Programación del radio Josué Gutierrez y Patrick Maynard");
+        
         //1
         crearBandaAM();
         System.out.println("");
