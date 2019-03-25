@@ -17,11 +17,14 @@ public class Radio {
     private List<Emisora> memoriaAM;
     private List<Emisora> memoriaFM;
     private TipoBanda bandaActual;
+    private Modo modo;
     private Emisora emisoraActual;
     private Bluetooth elBluetooth;
     private List<MemoriaExterna> memoriasExternas;
     private MemoriaExterna memExtSeleccionada;
     private boolean encendido;
+    private boolean detenerse = true;
+    private Equalizador elEqualizador = new Equalizador();
     /**
      * @param args the command line arguments
      */
@@ -30,9 +33,51 @@ public class Radio {
     
     public Radio()
     {
+       this.encendido = true;
+       this.bandaActual = TipoBanda.FM;
+       this.emisoraActual = new Emisora(94.3f, "Radio Reloj");
+       this.modo = Modo.Radio;
+       crearFavoritas();
+    }
+    
+    public void crearFavoritas()
+    {
+        List<Emisora> favoritasAM = new ArrayList<>();
+        List<Emisora> favoritasFM = new ArrayList<>();
+        
+        favoritasAM.add(new Emisora(600f, "Seiscientos"));
+        favoritasAM.add(new Emisora(800f, "Ochocientos"));
+        
+        favoritasFM.add(new Emisora(94.3f, "Radio Reloj"));
+        favoritasFM.add(new Emisora(94.7f, "Radio 94.7"));
+        favoritasFM.add(new Emisora(101f, "Radio Disney"));
+        
+        this.setMemoriaAM(favoritasAM);
+        this.setMemoriaFM(favoritasFM);
+        
+    }
+    
+    public void agregarAM(Emisora emisora)
+    {
+        if(memoriaAM.size() < 6)
+        {
+            memoriaAM.add(emisora);
+        }
+        else
+            memoriaAM.set(0, emisora);
+    }
+    
+    public void agregarFM(Emisora emisora)
+    {
+        if(memoriaFM.size() < 18)
+        {
+            memoriaFM.add(emisora);
+        }
+        else
+            memoriaFM.set(0, emisora);
     }
 
-    public Radio(String marca, String dimensiones, List<Emisora> memoriaAM, List<Emisora> memoriaFM, TipoBanda bandaActual, Emisora emisoraActual, Bluetooth elBluetooth, List<MemoriaExterna> memoriasExternas, MemoriaExterna memExtSeleccionada, boolean encendido) {
+    public Radio(String marca, String dimensiones, List<Emisora> memoriaAM, List<Emisora> memoriaFM, TipoBanda bandaActual, Emisora emisoraActual, Bluetooth elBluetooth, List<MemoriaExterna> memoriasExternas, MemoriaExterna memExtSeleccionada, boolean encendido, Modo modo) {
         this.marca = marca;
         this.dimensiones = dimensiones;
         this.memoriaAM = memoriaAM;
@@ -43,10 +88,18 @@ public class Radio {
         this.memoriasExternas = memoriasExternas;
         this.memExtSeleccionada = memExtSeleccionada;
         this.encendido = encendido;
+        this.modo = modo;
     }
 
     /*******************Getter-Setters********************/
+    public Modo getModo() {
+        return modo;
+    }
     
+    public void setModo(Modo modo) {
+        this.modo = modo;
+    }
+
     public String getMarca() {
         return marca;
     }
@@ -126,9 +179,24 @@ public class Radio {
     public void setEncendido(boolean encendido) {
         this.encendido = encendido;
     }
+
+    public Equalizador getElEqualizador() {
+        return elEqualizador;
+    }
+
+    public void setElEqualizador(Equalizador elEqualizador) {
+        this.elEqualizador = elEqualizador;
+    }
     
     /******************************************************/
 
+    public boolean isDetenerse() {
+        return detenerse;
+    }
+
+    public void setDetenerse(boolean detenerse) {
+        this.detenerse = detenerse;
+    }
     public void encender() {
         this.encendido = true;
     }
@@ -183,5 +251,6 @@ public class Radio {
         
         // TODO code application logic here
     }
+    
     
 }

@@ -40,7 +40,10 @@ public class Emisora {
 
     @Override
     public String toString() {
-        return "Emisora\nNombre: " + this.nombre + " Frecuencia: " + this.frecuencia;
+        String result = String.format("\nEmisora\nNombre: " + this.nombre + " Frecuencia: " + "%.1f", this.frecuencia);
+        return result;
+        
+        //return "\nEmisora\nNombre: " + this.nombre + " Frecuencia: " + this.frecuencia;
     }
     
     

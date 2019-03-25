@@ -41,7 +41,7 @@ public class Banda {
 
     @Override
     public String toString() {
-        return "Banda\nTipo de Banda: "+ this.tipo+ " Lista de emisoras: "+ emisoras.toString();
+        return "Banda\nTipo de Banda: "+ this.tipo+ " \nLista de emisoras: "+ emisoras.toString();
     }
     
     

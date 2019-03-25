@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="name" type="java.lang.String" value="Radio" noResource="true"/>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[640, 360]"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="toggleBluetooth" min="-2" max="-2" attributes="0"/>
+                          <Component id="toggleRadio" min="-2" max="-2" attributes="0"/>
+                          <Component id="toggleUSB" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="bPair" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+                  <Component id="radioTextBox" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="toggleAM" min="-2" max="-2" attributes="0"/>
+                  <Component id="toggleFM" min="-2" max="-2" attributes="0"/>
+                  <Component id="bEncendido" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="bFavorite" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="favAtras" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="fav1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="bScan" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="bAtras" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="bSiguiente" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jSlider1" min="-2" pref="127" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="fav2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="fav3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="fav4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="fav5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="fav6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="favSiguiente" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="bEncendido" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="toggleAM" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="toggleFM" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="radioTextBox" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" min="-2" pref="173" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="17" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="toggleRadio" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="toggleBluetooth" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="toggleUSB" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="bPair" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <Component id="jSeparator1" min="-2" pref="11" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="fav1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fav2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fav3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fav4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fav5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fav6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="favSiguiente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="favAtras" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bFavorite" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                      <Component id="bAtras" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="bSiguiente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jSlider1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                      <Component id="bScan" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JSeparator" name="jSeparator1">
+    </Component>
+    <Component class="javax.swing.JButton" name="bAtras">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/radio/media/previous.png"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[50, 50]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bAtrasActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="bSiguiente">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/radio/media/next.png"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[50, 50]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bSiguienteActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="radioText">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="20" style="0"/>
+            </Property>
+            <Property name="rows" type="int" value="1"/>
+            <Property name="text" type="java.lang.String" value="test"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JSlider" name="jSlider1">
+      <Properties>
+        <Property name="value" type="int" value="0"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jSlider1MouseReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton5">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/radio/media/play.png"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[50, 50]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="toggleAM">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="AM"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="toggleAMActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="toggleFM">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="FM"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="toggleFMActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="toggleRadio">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/radio/media/radio.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="toggleRadioActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="toggleUSB">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/radio/media/usb.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="toggleUSBActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="toggleBluetooth">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/radio/media/bluetooth.png"/>
+        </Property>
+        <Property name="selected" type="boolean" value="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="toggleBluetoothActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="radioTextBox">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modo RADIO"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="bPair">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pair"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bPairActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="bEncendido">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/radio/media/on.png"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[45, 45]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bEncendidoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="fav1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fav1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="fav2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fav2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="fav4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fav4ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="fav3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fav3ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="fav6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="6"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fav6ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JToggleButton" name="fav5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fav5ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="favSiguiente">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&gt;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="favSiguienteActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="favAtras">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="favAtrasActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="bScan">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Scan"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bScanActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="bFavorite">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Favorite"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bFavoriteActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
