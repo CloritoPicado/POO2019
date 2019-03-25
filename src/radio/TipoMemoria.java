@@ -10,6 +10,14 @@ package radio;
  * @author Patrixito
  */
 public enum TipoMemoria {
+
+    /**
+     *
+     */
     SD,
+
+    /**
+     *
+     */
     USB
 }

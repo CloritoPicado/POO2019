@@ -10,7 +10,19 @@ package radio;
  * @author Patrixito
  */
 public enum Modo {
+
+    /**
+     *
+     */
     Bluetooth,
+
+    /**
+     *
+     */
     USB,
+
+    /**
+     *
+     */
     Radio
 }

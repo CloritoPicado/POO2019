@@ -10,7 +10,15 @@ package radio;
  * @author Patrixito
  */
 public enum TipoBanda {
+
+    /**
+     *
+     */
     AM,
+
+    /**
+     *
+     */
     FM
     
 }

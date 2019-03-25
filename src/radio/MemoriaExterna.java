@@ -14,26 +14,50 @@ public class MemoriaExterna {
     private TipoMemoria tipo;
     private Object contenido;
 
+    /**
+     *
+     */
     public MemoriaExterna() {
     }
 
+    /**
+     *
+     * @param tipo
+     * @param contenido
+     */
     public MemoriaExterna(TipoMemoria tipo, Object contenido) {
         this.tipo = tipo;
         this.contenido = contenido;
     }
 
+    /**
+     *
+     * @return
+     */
     public TipoMemoria getTipo() {
         return tipo;
     }
 
+    /**
+     *
+     * @param tipo
+     */
     public void setTipo(TipoMemoria tipo) {
         this.tipo = tipo;
     }
 
+    /**
+     *
+     * @return
+     */
     public Object getContenido() {
         return contenido;
     }
 
+    /**
+     *
+     * @param contenido
+     */
     public void setContenido(Object contenido) {
         this.contenido = contenido;
     }

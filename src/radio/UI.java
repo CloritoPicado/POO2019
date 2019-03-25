@@ -126,6 +126,9 @@ public class UI extends javax.swing.JFrame {
                 
     }
     
+    /**
+     * Description Crea un hilo que llama a la función siguienteAM o siguienteFM cada 1.5s hasta que radio.isDetenerse() sea true.
+     */
     public void scanFM()
     {
         
@@ -157,6 +160,9 @@ public class UI extends javax.swing.JFrame {
         
     }
     
+    /**
+     * Calcula la siguiente emisora FM y la imprese en el Text Area
+     */
     public void siguienteFM()
     {
         Emisora tempEmisora = radio.getEmisoraActual();
@@ -174,6 +180,9 @@ public class UI extends javax.swing.JFrame {
         }
     }
     
+    /**
+     * Calcula la siguiente emisora AM y la imprese en el Text Area
+     */
     public void siguienteAM()
     {
         Emisora tempEmisora = radio.getEmisoraActual();
@@ -191,6 +200,9 @@ public class UI extends javax.swing.JFrame {
         }
     }
     
+    /**
+     * Calcula la anterior emisora AM y la imprese en el Text Area
+     */
     public void anteriorFM()
     {
         Emisora tempEmisora = radio.getEmisoraActual();
@@ -208,6 +220,9 @@ public class UI extends javax.swing.JFrame {
         }
     }
     
+    /**
+     *  Calcula la anterior emisora FM y la imprese en el Text Area
+     */
     public void anteriorAM()
     {
         Emisora tempEmisora = radio.getEmisoraActual();
@@ -225,6 +240,9 @@ public class UI extends javax.swing.JFrame {
         }
     }
     
+    /**
+     * Calcula las bandas válidas del rango AM y las mete en BandaAM.
+     */
     public void crearBandaAM()
     {
         // 540 to 1600 kHz
@@ -240,6 +258,9 @@ public class UI extends javax.swing.JFrame {
         System.out.println(bandaAM);
     }
     
+    /**
+     * Calcula las bandas válidas del rango FM y las mete en BandaFM.
+     */
     public void crearBandaFM()
     {
         List<Emisora> listaFrecuencia = new ArrayList<>();
@@ -254,16 +275,27 @@ public class UI extends javax.swing.JFrame {
         System.out.println(bandaFM);
     }
     
+    /**
+     *
+     * @param print Impreme al text area
+     */
     public void radioPrint(String print)
     {
         radioText.setText(print);
     }
     
+    /**
+     *
+     * @param print Impreme al text field
+     */
     public void textBoxPrint(String print)
     {
         radioTextBox.setText(print);
     }
     
+    /**
+     * Deselecciona los toggle buttons favoritos
+     */
     public void deseleccionarFavoritos()
     {
         fav1.setSelected(false);
@@ -712,6 +744,10 @@ public class UI extends javax.swing.JFrame {
         getFavorita(6);
     }//GEN-LAST:event_fav6ActionPerformed
 
+    /**
+     *
+     * @param i
+     */
     public void getFavorita(int i)
     {
         if(radio.getModo() == Modo.Radio)

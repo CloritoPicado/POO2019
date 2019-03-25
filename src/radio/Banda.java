@@ -15,26 +15,50 @@ public class Banda {
     private TipoBanda tipo;
     private List<Emisora> emisoras;
 
+    /**
+     *
+     */
     public Banda() {
     }
 
+    /**
+     *
+     * @param tipo
+     * @param emisoras
+     */
     public Banda(TipoBanda tipo, List<Emisora> emisoras) {
         this.tipo = tipo;
         this.emisoras = emisoras;
     }
 
+    /**
+     *
+     * @return
+     */
     public TipoBanda getTipo() {
         return tipo;
     }
 
+    /**
+     *
+     * @param tipo
+     */
     public void setTipo(TipoBanda tipo) {
         this.tipo = tipo;
     }
 
+    /**
+     *
+     * @return
+     */
     public List<Emisora> getEmisoras() {
         return emisoras;
     }
 
+    /**
+     *
+     * @param emisoras
+     */
     public void setEmisoras(List<Emisora> emisoras) {
         this.emisoras = emisoras;
     }

@@ -26,7 +26,6 @@ public class Radio {
     private boolean detenerse = true;
     private Equalizador elEqualizador = new Equalizador();
     /**
-     * @param args the command line arguments
      */
     
     
@@ -40,6 +39,9 @@ public class Radio {
        crearFavoritas();
     }
     
+    /**
+     * 
+     */
     public void crearFavoritas()
     {
         List<Emisora> favoritasAM = new ArrayList<>();
@@ -57,6 +59,10 @@ public class Radio {
         
     }
     
+    /**
+     *
+     * @param emisora Description Agrega una emisora AM a la lista de favoritos en una posición vacía, o sino la primera posición.
+     */
     public void agregarAM(Emisora emisora)
     {
         if(memoriaAM.size() < 6)
@@ -67,6 +73,10 @@ public class Radio {
             memoriaAM.set(0, emisora);
     }
     
+    /**
+     *
+     * @param emisora Description Agrega una emisora FM a la lista de favoritos en una posición vacía, o sino la primera posición.
+     */
     public void agregarFM(Emisora emisora)
     {
         if(memoriaFM.size() < 18)
@@ -77,6 +87,20 @@ public class Radio {
             memoriaFM.set(0, emisora);
     }
 
+    /**
+     *
+     * @param marca
+     * @param dimensiones
+     * @param memoriaAM
+     * @param memoriaFM
+     * @param bandaActual
+     * @param emisoraActual
+     * @param elBluetooth
+     * @param memoriasExternas
+     * @param memExtSeleccionada
+     * @param encendido
+     * @param modo
+     */
     public Radio(String marca, String dimensiones, List<Emisora> memoriaAM, List<Emisora> memoriaFM, TipoBanda bandaActual, Emisora emisoraActual, Bluetooth elBluetooth, List<MemoriaExterna> memoriasExternas, MemoriaExterna memExtSeleccionada, boolean encendido, Modo modo) {
         this.marca = marca;
         this.dimensiones = dimensiones;
@@ -91,161 +115,303 @@ public class Radio {
         this.modo = modo;
     }
 
-    /*******************Getter-Setters********************/
+    /*******************Getter-Setter
+     * @return s********************/
     public Modo getModo() {
         return modo;
     }
     
+    /**
+     *
+     * @param modo
+     */
     public void setModo(Modo modo) {
         this.modo = modo;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getMarca() {
         return marca;
     }
 
+    /**
+     *
+     * @param marca
+     */
     public void setMarca(String marca) {
         this.marca = marca;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getDimensiones() {
         return dimensiones;
     }
 
+    /**
+     *
+     * @param dimensiones
+     */
     public void setDimensiones(String dimensiones) {
         this.dimensiones = dimensiones;
     }
 
+    /**
+     *
+     * @return
+     */
     public List<Emisora> getMemoriaAM() {
         return memoriaAM;
     }
 
+    /**
+     *
+     * @param memoriaAM
+     */
     public void setMemoriaAM(List<Emisora> memoriaAM) {
         this.memoriaAM = memoriaAM;
     }
 
+    /**
+     *
+     * @return
+     */
     public List<Emisora> getMemoriaFM() {
         return memoriaFM;
     }
 
+    /**
+     *
+     * @param memoriaFM
+     */
     public void setMemoriaFM(List<Emisora> memoriaFM) {
         this.memoriaFM = memoriaFM;
     }
 
+    /**
+     *
+     * @return
+     */
     public TipoBanda getBandaActual() {
         return bandaActual;
     }
 
+    /**
+     *
+     * @param bandaActual
+     */
     public void setBandaActual(TipoBanda bandaActual) {
         this.bandaActual = bandaActual;
     }
 
+    /**
+     *
+     * @return
+     */
     public Emisora getEmisoraActual() {
         return emisoraActual;
     }
 
+    /**
+     *
+     * @param emisoraActual
+     */
     public void setEmisoraActual(Emisora emisoraActual) {
         this.emisoraActual = emisoraActual;
     }
 
+    /**
+     *
+     * @return
+     */
     public Bluetooth getElBluetooth() {
         return elBluetooth;
     }
 
+    /**
+     *
+     * @param elBluetooth
+     */
     public void setElBluetooth(Bluetooth elBluetooth) {
         this.elBluetooth = elBluetooth;
     }
 
+    /**
+     *
+     * @return
+     */
     public List<MemoriaExterna> getMemoriasExternas() {
         return memoriasExternas;
     }
 
+    /**
+     *
+     * @param memoriasExternas
+     */
     public void setMemoriasExternas(List<MemoriaExterna> memoriasExternas) {
         this.memoriasExternas = memoriasExternas;
     }
 
+    /**
+     *
+     * @return
+     */
     public MemoriaExterna getMemExtSeleccionada() {
         return memExtSeleccionada;
     }
 
+    /**
+     *
+     * @param memExtSeleccionada
+     */
     public void setMemExtSeleccionada(MemoriaExterna memExtSeleccionada) {
         this.memExtSeleccionada = memExtSeleccionada;
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean isEncendido() {
         return encendido;
     }
 
+    /**
+     *
+     * @param encendido
+     */
     public void setEncendido(boolean encendido) {
         this.encendido = encendido;
     }
 
+    /**
+     *
+     * @return
+     */
     public Equalizador getElEqualizador() {
         return elEqualizador;
     }
 
+    /**
+     *
+     * @param elEqualizador
+     */
     public void setElEqualizador(Equalizador elEqualizador) {
         this.elEqualizador = elEqualizador;
     }
     
-    /******************************************************/
+    /**
+     * @return ****************************************************/
 
     public boolean isDetenerse() {
         return detenerse;
     }
 
+    /**
+     *
+     * @param detenerse
+     */
     public void setDetenerse(boolean detenerse) {
         this.detenerse = detenerse;
     }
+
+    /**
+     *
+     */
     public void encender() {
         this.encendido = true;
     }
     
+    /**
+     *
+     */
     public void apagar()
     {
         this.encendido = false;
     }
     
+    /**
+     *
+     * @param banda
+     * @param numMemoria
+     * @param emisora
+     */
     public void asignarEmisoraAMemoria(TipoBanda banda, int numMemoria, Emisora emisora)
     {
         
     }    
     
+    /**
+     *
+     * @param banda
+     * @param posicion
+     * @return
+     */
     public Emisora getMemoria(TipoBanda banda, int posicion)
     {
         return null;
     }
     
+    /**
+     *
+     * @param laBanda
+     */
     public void hacerScan(Banda laBanda)
     {
         
     }
     
+    /**
+     *
+     * @param banda
+     */
     public void setSigEmisora(TipoBanda banda)
     {
         
     }
     
+    /**
+     *
+     * @param banda
+     */
     public void setAntEmisora(TipoBanda banda)
     {
         
     }
     
+    /**
+     *
+     */
     public void reproducirEmisora()
     {
         
     }
     
+    /**
+     *
+     */
     public void reproducirDesdeBluetooth()
     {
         
     }
     
+    /**
+     *
+     */
     public void reproducirDesdeMemoriaExterna()
     {
         
     }
     
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         
         

@@ -14,26 +14,50 @@ public class Emisora {
     private float frecuencia;
     private String nombre;
 
+    /**
+     *
+     * @param frecuencia
+     * @param nombre
+     */
     public Emisora(float frecuencia, String nombre) {
         this.frecuencia = frecuencia;
         this.nombre = nombre;
     }
 
+    /**
+     *
+     */
     public Emisora() {
     }
 
+    /**
+     *
+     * @return
+     */
     public float getFrecuencia() {
         return frecuencia;
     }
 
+    /**
+     *
+     * @param frecuencia
+     */
     public void setFrecuencia(float frecuencia) {
         this.frecuencia = frecuencia;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     *
+     * @param nombre
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }

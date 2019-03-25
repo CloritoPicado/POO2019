@@ -11,6 +11,9 @@ package radio;
  */
 public class Dispositivo {
 
+    /**
+     *
+     */
     public Dispositivo() {
     }
         
